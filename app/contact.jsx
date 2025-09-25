@@ -1,8 +1,5 @@
-import { Image } from "expo-image"
-import { Platform, StyleSheet } from "react-native"
+import { StyleSheet } from "react-native"
 
-import { Collapsible } from "@/components/ui/collapsible"
-import { ExternalLink } from "@/components/external-link"
 import ParallaxScrollView from "@/components/parallax-scroll-view"
 import { ThemedText } from "@/components/themed-text"
 import { ThemedView } from "@/components/themed-view"
@@ -14,10 +11,15 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: "#D0D0D0", dark: "#353636" }}
       headerImage={
+        // <MaterialIcons
+        //   name="local-cafe"
+        //   size={250}
+        //   style={styles.headerImage}
+        // />
         <IconSymbol
-          size={310}
+          size={250}
           color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
+          name="coffeeCup.fill"
           style={styles.headerImage}
         />
       }
@@ -29,13 +31,16 @@ export default function TabTwoScreen() {
             fontFamily: Fonts.rounded,
           }}
         >
-          Explore
+          Coffee Shop
         </ThemedText>
       </ThemedView>
-      <ThemedText>
-        This app includes example code to help you get started.
-      </ThemedText>
-      <Collapsible title="File-based routing">
+      <ThemedText>02099 28 Тракторобудівників, Харуів, Україна</ThemedText>
+
+      <ThemedText>телефон: 067 425 06 48 або повідомлення @Аскарід</ThemedText>
+
+      <ThemedText>Години роботи: цілодобово</ThemedText>
+
+      {/* <Collapsible title="File-based routing">
         <ThemedText>
           This app has two screens:{" "}
           <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText>{" "}
@@ -50,15 +55,15 @@ export default function TabTwoScreen() {
         <ExternalLink href="https://docs.expo.dev/router/introduction">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
+      </Collapsible> */}
+      {/* <Collapsible title="Android, iOS, and web support">
         <ThemedText>
           You can open this project on Android, iOS, and the web. To open the
           web version, press <ThemedText type="defaultSemiBold">w</ThemedText>{" "}
           in the terminal running this project.
         </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
+      </Collapsible> */}
+      {/* <Collapsible title="Images">
         <ThemedText>
           For static images, you can use the{" "}
           <ThemedText type="defaultSemiBold">@2x</ThemedText> and{" "}
@@ -72,8 +77,8 @@ export default function TabTwoScreen() {
         <ExternalLink href="https://reactnative.dev/docs/images">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
+      </Collapsible> */}
+      {/* <Collapsible title="Light and dark mode components">
         <ThemedText>
           This template has light and dark mode support. The{" "}
           <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook
@@ -83,8 +88,8 @@ export default function TabTwoScreen() {
         <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
+      </Collapsible> */}
+      {/* <Collapsible title="Animations">
         <ThemedText>
           This template includes an example of an animated component. The{" "}
           <ThemedText type="defaultSemiBold">
@@ -107,7 +112,7 @@ export default function TabTwoScreen() {
             </ThemedText>
           ),
         })}
-      </Collapsible>
+      </Collapsible> */}
     </ParallaxScrollView>
   )
 }
@@ -115,8 +120,6 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   headerImage: {
     color: "#808080",
-    bottom: -90,
-    left: -35,
     position: "absolute",
   },
   titleContainer: {
