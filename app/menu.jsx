@@ -4,19 +4,27 @@ import {
   Appearance,
   FlatList,
   Image,
-  Platform,
-  ScrollView,
   StyleSheet,
   Text,
+  Platform,
+  ScrollView,
   View,
 } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { Colors } from "../constants/theme"
+
 export default function MenuScreen() {
   const colorScheme = Appearance.getColorScheme()
   const theme = colorScheme === "dark" ? Colors.dark : Colors.light
   const styles = createStyles(theme, colorScheme)
-  const Container = Platform.OS === "web" ? ScrollView : SafeAreaView
+
+  const Container =
+    Platform.OS === "web"
+      ? ScrollView
+      : Platform.OS === "ios"
+      ? SafeAreaView
+      : View
+
   const separatorComp = <View style={styles.separator} />
   // const headerComp = <Text>Top of list</Text>
   const footerComp = <Text style={{ color: theme.text }}>End of menu</Text>
