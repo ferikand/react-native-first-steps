@@ -34,7 +34,7 @@ export default function TabTwoScreen() {
           Coffee Shop
         </ThemedText>
       </ThemedView>
-      <ThemedText>02099 28 Тракторобудівників, Харуів, Україна</ThemedText>
+      <ThemedText>02099 28 Тракторобудівників, Харkів, Україна</ThemedText>
 
       <ThemedText>телефон: 067 425 06 48 або повідомлення @Аскарід</ThemedText>
 
