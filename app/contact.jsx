@@ -34,11 +34,11 @@ export default function TabTwoScreen() {
           Coffee Shop
         </ThemedText>
       </ThemedView>
-      <ThemedText>02099 28 Тракторобудівників, Харkів, Україна</ThemedText>
+      <ThemedText>Address: {'\n'} 02099 28 Тракторобудівників, Харkів, Україна</ThemedText>
 
-      <ThemedText>телефон: 067 425 06 48 або повідомлення @Аскарід</ThemedText>
+      <ThemedText>телефон: {'\n'} 067 425 06 48 {'\n'} або повідомлення @Аскарід</ThemedText>
 
-      <ThemedText>Години роботи: цілодобово</ThemedText>
+      <ThemedText>Години роботи:{'\n'} цілодобово</ThemedText>
 
       {/* <Collapsible title="File-based routing">
         <ThemedText>
